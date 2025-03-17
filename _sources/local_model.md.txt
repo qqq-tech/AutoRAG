@@ -33,18 +33,18 @@ The following modules can use generator module, which including `llama_index_llm
 - [query_decompose](nodes/query_expansion/query_decompose.md)
 - [multi_query_expansion](nodes/query_expansion/multi_query_expansion.md)
 - [tree_summarize](nodes/passage_compressor/tree_summarize.md)
+- [refine](nodes/passage_compressor/refine.md)
 
-### Supporting LLM models
+### Supporting LLM Models
 
-We support most of the llm that LlamaIndex is supporting.
-To change the LLM model type, you can change the `llm` parameter to the following values:
+We support most of the LLMs that LlamaIndex supports. You can use different types of LLM interfaces by configuring the `llm` parameter:
 
-| LLM Model Type | llm parameter  |
-|:--------------:|:--------------:|
-|     OpenAI     |     openai     |
-| HuggingFaceLLM | huggingfacellm |
-|   OpenAILike   |   openailike   |
-|     Ollama     |     ollama     |
+| LLM Model Type | llm parameter  | Description |
+|:--------------:|:--------------:|-------------|
+|     OpenAI     |     openai     | For OpenAI models (GPT-3.5, GPT-4) |
+|   OpenAILike   |   openailike   | For models with OpenAI-compatible APIs (e.g., Mistral, Claude) |
+|     Ollama     |     ollama     | For locally running Ollama models |
+|    Bedrock     |    bedrock     | For AWS Bedrock models |
 
 For example, if you want to use `OpenAILike` model, you can set `llm` parameter to `openailike`.
 
@@ -67,6 +67,52 @@ You can set the model parameter for LlamaIndex LLM initialization.
 The most frequently used parameters are `model`, `max_token`, and `temperature`.
 Please check what you can set for the model parameter
 at [LlamaIndex LLM](https://docs.llamaindex.ai/en/stable/module_guides/models/llms/).
+
+#### Using HuggingFace Models
+
+There are two main ways to use HuggingFace models:
+
+1. **Through OpenAILike Interface** (Recommended for hosted API endpoints):
+```yaml
+nodes:
+  - node_line_name: node_line_1
+    nodes:
+      - node_type: generator
+        modules:
+          - module_type: llama_index_llm
+            llm: openailike
+            model: mistralai/Mistral-7B-Instruct-v0.2
+            api_base: your_api_base
+            api_key: your_api_key
+```
+
+2. **Through Direct HuggingFace Integration** (For local deployment):
+```yaml
+nodes:
+  - node_line_name: node_line_1
+    nodes:
+      - node_type: generator
+        modules:
+          - module_type: llama_index_llm
+            llm: huggingface
+            model_name: mistralai/Mistral-7B-Instruct-v0.2
+            device_map: "auto"
+            model_kwargs:
+              torch_dtype: "float16"
+```
+
+#### Common Parameters
+
+The most frequently used parameters for LLM configuration are:
+
+- `model`: The model identifier or name
+- `max_tokens`: Maximum number of tokens in the response
+- `temperature`: Controls randomness in the output (0.0 to 1.0)
+- `api_base`: API endpoint URL (for hosted models)
+- `api_key`: Authentication key (if required)
+
+For a complete list of available parameters, please refer to the
+[LlamaIndex LLM documentation](https://docs.llamaindex.ai/en/stable/module_guides/models/llms/).
 
 ### Add more LLM models
 
@@ -104,7 +150,51 @@ Modules that using an embedding model can take `embedding_model` parameter to sp
 
 - [vectordb](nodes/retrieval/vectordb.md)
 
-### Supporting Embedding models
+### Configure the model name in the YAML file
+
+For easier use, since v0.3.13, we support configuring model name in the YAML file.
+
+We support this new configuration option, plus the legacy configuration option that is described below.
+So if you used before v0.3.13 version, it is okay to use the legacy configuration option.
+
+We support the following embedding model types:
+
+- openai
+- huggingface
+- mock
+- ollama
+
+You can configure the embedding model option directly in the YAML file `vectordb` section.
+If you want to know how to configure vectordb in AutoRAG,
+please go [here](https://docs.auto-rag.com/integration/vectordb/vectordb.html).
+
+For example,
+
+```yaml
+vectordb:
+- name: autorag_test
+  db_type: milvus
+  embedding_model:
+  - type: huggingface
+    model_name: intfloat/multilingual-e5-large-instruct
+  ...
+```
+
+or
+
+```yaml
+vectordb:
+- name: autorag_test
+  db_type: milvus
+  embedding_model:
+  - type: openai
+    model_name: text-embedding-3-small
+  ...
+```
+
+If you want to use your own embedding model, simply change the model_name at huggingface(or ollama) type embedding model configuration.
+
+### Supporting Embedding models (Legacy)
 
 As default, we support OpenAI embedding models and some of the local models.
 To change the embedding model, you can change the `embedding_model` parameter to the following values:
@@ -120,19 +210,25 @@ To change the embedding model, you can change the `embedding_model` parameter to
 |                             [BAAI/bge-m3](https://huggingface.co/BAAI/bge-m3)                             |          huggingface_bge_m3           |
 
 For example, if you want to use OpenAI text embedding large model, you can set `embedding_model` parameter
-to `openai_embed_3_large`.
+to `openai_embed_3_large` when setting vectordb.
 
 ```yaml
+vectordb:
+  - name: chroma_openai
+    db_type: chroma
+    client_type: persistent
+    embedding_model: openai_embed_3_large
+    collection_name: openai_embed_3_large
 nodes:
   - node_line_name: node_line_1
     nodes:
       - node_type: retrieval
         modules:
           - module_type: vectordb
-            embedding_model: openai
+            vectordb: chroma_openai
 ```
 
-### Add your embedding models
+### Add your embedding models (Legacy)
 
 You can add more embedding models for AutoRAG.
 You can add it by simply calling `autorag.embedding_models` and add new key and value.

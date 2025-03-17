@@ -15,12 +15,12 @@
         gtag('js', new Date());
         gtag('config', 'G-T8ZKQM6RT9');
     </script>
-    <link rel="index" title="Index" href="../genindex.html" /><link rel="search" title="Search" href="../search.html" /><link rel="next" title="Web Interface" href="web.html" /><link rel="prev" title="OpenAI LLM" href="../nodes/generator/openai_llm.html" />
+    <link rel="index" title="Index" href="../genindex.html" /><link rel="search" title="Search" href="../search.html" /><link rel="next" title="Web Interface" href="web.html" /><link rel="prev" title="vLLM API" href="../nodes/generator/vllm_api.html" />
         <link rel="canonical" href="https://docs.auto-rag.com/deploy/api_endpoint.html" />
 
-    <!-- Generated with Sphinx 8.1.0 and Furo 2024.08.06 -->
+    <!-- Generated with Sphinx 8.1.3 and Furo 2024.08.06 -->
         <title>API endpoint - AutoRAG documentation</title>
-      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=a746c00c" />
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=8f2a1f02" />
     <link rel="stylesheet" type="text/css" href="../_static/styles/furo.css?v=354aac6f" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
     <link rel="stylesheet" type="text/css" href="../_static/tabs.css?v=4c969af8" />
@@ -221,6 +221,12 @@
 <li class="toctree-l1"><a class="reference internal" href="../structure.html">Structure</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../troubleshooting.html">TroubleShooting</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../local_model.html">Configure LLM &amp; Embedding models</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../migration.html">Migration Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../test_your_rag.html">Evaluate your RAG</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">AutoRAG GUI</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../gui/gui.html">AutoRAG GUI</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Data Creation</span></p>
 <ul>
@@ -260,6 +266,26 @@
 <li class="toctree-l1"><a class="reference internal" href="../optimization/folder_structure.html">Folder Structure</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../optimization/custom_config.html">Make a custom config YAML file</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../optimization/strategies.html">Strategy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../optimization/sample_config.html">Sample YAML file guide</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Integration</span></p>
+<ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../integration/llm/llm.html">Configure LLM</a><input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" role="switch" type="checkbox"/><label for="toctree-checkbox-6"><div class="visually-hidden">Toggle navigation of Configure LLM</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../integration/llm/aws_bedrock.html">AWS Bedrock x AutoRAG</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../integration/llm/huggingface_llm.html">HuggingFace LLM x AutoRAG</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../integration/llm/nvidia_nim.html">Nvidia Nim x AutoRAG</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../integration/llm/ollama.html">OLLAMA x AutoRAG</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../integration/vectordb/vectordb.html">Configure Vector DB</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" role="switch" type="checkbox"/><label for="toctree-checkbox-7"><div class="visually-hidden">Toggle navigation of Configure Vector DB</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../integration/vectordb/chroma.html">Chroma</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../integration/vectordb/milvus.html">Milvus</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../integration/vectordb/weaviate.html">Weaviate</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../integration/vectordb/pinecone.html">Pinecone</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../integration/vectordb/couchbase.html">Couchbase</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../integration/vectordb/qdrant.html">Qdrant</a></li>
+</ul>
+</li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Evaluation Metrics</span></p>
 <ul>
@@ -270,24 +296,24 @@
 <p class="caption" role="heading"><span class="caption-text">Nodes &amp; Modules</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../nodes/index.html">Available List</a></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../nodes/query_expansion/query_expansion.html"><strong>1. Query Expansion</strong></a><input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" role="switch" type="checkbox"/><label for="toctree-checkbox-6"><div class="visually-hidden">Toggle navigation of 1. Query Expansion</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../nodes/query_expansion/query_expansion.html"><strong>1. Query Expansion</strong></a><input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" role="switch" type="checkbox"/><label for="toctree-checkbox-8"><div class="visually-hidden">Toggle navigation of 1. Query Expansion</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../nodes/query_expansion/query_decompose.html">Query Decompose</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../nodes/query_expansion/hyde.html">HyDE</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../nodes/query_expansion/multi_query_expansion.html">Multi Query Expansion</a></li>
 </ul>
 </li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../nodes/retrieval/retrieval.html">2. Retrieval</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" role="switch" type="checkbox"/><label for="toctree-checkbox-7"><div class="visually-hidden">Toggle navigation of 2. Retrieval</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../nodes/retrieval/retrieval.html">2. Retrieval</a><input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" role="switch" type="checkbox"/><label for="toctree-checkbox-9"><div class="visually-hidden">Toggle navigation of 2. Retrieval</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../nodes/retrieval/bm25.html">BM25</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../nodes/retrieval/vectordb.html">Vectordb</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../nodes/retrieval/hybrid_rrf.html">Hybrid - rrf</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../nodes/retrieval/hybrid_cc.html">Hybrid - cc</a></li>
 </ul>
 </li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../nodes/passage_augmenter/passage_augmenter.html">3. Passage Augmenter</a><input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" role="switch" type="checkbox"/><label for="toctree-checkbox-8"><div class="visually-hidden">Toggle navigation of 3. Passage Augmenter</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../nodes/passage_augmenter/passage_augmenter.html">3. Passage Augmenter</a><input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" role="switch" type="checkbox"/><label for="toctree-checkbox-10"><div class="visually-hidden">Toggle navigation of 3. Passage Augmenter</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../nodes/passage_augmenter/prev_next_augmenter.html">Prev Next Augmenter</a></li>
 </ul>
 </li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../nodes/passage_reranker/passage_reranker.html">4. Passage_Reranker</a><input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" role="switch" type="checkbox"/><label for="toctree-checkbox-9"><div class="visually-hidden">Toggle navigation of 4. Passage_Reranker</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../nodes/passage_reranker/passage_reranker.html">4. Passage_Reranker</a><input class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" role="switch" type="checkbox"/><label for="toctree-checkbox-11"><div class="visually-hidden">Toggle navigation of 4. Passage_Reranker</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../nodes/passage_reranker/upr.html">UPR</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../nodes/passage_reranker/tart.html">TART</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../nodes/passage_reranker/monot5.html">MonoT5</a></li>
@@ -303,9 +329,10 @@
 <li class="toctree-l2"><a class="reference internal" href="../nodes/passage_reranker/openvino_reranker.html">OpenVINO Reranker</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../nodes/passage_reranker/voyageai_reranker.html">voyageai_reranker</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../nodes/passage_reranker/mixedbreadai_reranker.html">Mixedbread AI Reranker</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../nodes/passage_reranker/flashrank_reranker.html">FlashRank Reranker</a></li>
 </ul>
 </li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../nodes/passage_filter/passage_filter.html">5. Passage Filter</a><input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" role="switch" type="checkbox"/><label for="toctree-checkbox-10"><div class="visually-hidden">Toggle navigation of 5. Passage Filter</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../nodes/passage_filter/passage_filter.html">5. Passage Filter</a><input class="toctree-checkbox" id="toctree-checkbox-12" name="toctree-checkbox-12" role="switch" type="checkbox"/><label for="toctree-checkbox-12"><div class="visually-hidden">Toggle navigation of 5. Passage Filter</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../nodes/passage_filter/similarity_threshold_cutoff.html">Similarity Threshold Cutoff</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../nodes/passage_filter/similarity_percentile_cutoff.html">Similarity Percentile Cutoff</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../nodes/passage_filter/recency_filter.html">Recency Filter</a></li>
@@ -313,22 +340,23 @@
 <li class="toctree-l2"><a class="reference internal" href="../nodes/passage_filter/percentile_cutoff.html">Percentile Cutoff</a></li>
 </ul>
 </li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../nodes/passage_compressor/passage_compressor.html">6. Passage_Compressor</a><input class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" role="switch" type="checkbox"/><label for="toctree-checkbox-11"><div class="visually-hidden">Toggle navigation of 6. Passage_Compressor</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../nodes/passage_compressor/passage_compressor.html">6. Passage_Compressor</a><input class="toctree-checkbox" id="toctree-checkbox-13" name="toctree-checkbox-13" role="switch" type="checkbox"/><label for="toctree-checkbox-13"><div class="visually-hidden">Toggle navigation of 6. Passage_Compressor</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../nodes/passage_compressor/tree_summarize.html">Tree Summarize</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../nodes/passage_compressor/refine.html">Refine</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../nodes/passage_compressor/longllmlingua.html">Long LLM Lingua</a></li>
 </ul>
 </li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../nodes/prompt_maker/prompt_maker.html">7. Prompt Maker</a><input class="toctree-checkbox" id="toctree-checkbox-12" name="toctree-checkbox-12" role="switch" type="checkbox"/><label for="toctree-checkbox-12"><div class="visually-hidden">Toggle navigation of 7. Prompt Maker</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../nodes/prompt_maker/prompt_maker.html">7. Prompt Maker</a><input class="toctree-checkbox" id="toctree-checkbox-14" name="toctree-checkbox-14" role="switch" type="checkbox"/><label for="toctree-checkbox-14"><div class="visually-hidden">Toggle navigation of 7. Prompt Maker</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../nodes/prompt_maker/fstring.html">F-String</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../nodes/prompt_maker/long_context_reorder.html">Long Context Reorder</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../nodes/prompt_maker/window_replacement.html">Window Replacement</a></li>
 </ul>
 </li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../nodes/generator/generator.html">8. Generator</a><input class="toctree-checkbox" id="toctree-checkbox-13" name="toctree-checkbox-13" role="switch" type="checkbox"/><label for="toctree-checkbox-13"><div class="visually-hidden">Toggle navigation of 8. Generator</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../nodes/generator/generator.html">8. Generator</a><input class="toctree-checkbox" id="toctree-checkbox-15" name="toctree-checkbox-15" role="switch" type="checkbox"/><label for="toctree-checkbox-15"><div class="visually-hidden">Toggle navigation of 8. Generator</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../nodes/generator/llama_index_llm.html">llama_index LLM</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../nodes/generator/vllm.html">vllm</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../nodes/generator/openai_llm.html">OpenAI LLM</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../nodes/generator/vllm_api.html">vLLM API</a></li>
 </ul>
 </li>
 </ul>
@@ -343,49 +371,7 @@
 </ul>
 <p class="caption" role="heading"><span class="caption-text">API Reference</span></p>
 <ul>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../api_spec/modules.html">autorag</a><input class="toctree-checkbox" id="toctree-checkbox-14" name="toctree-checkbox-14" role="switch" type="checkbox"/><label for="toctree-checkbox-14"><div class="visually-hidden">Toggle navigation of autorag</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
-<li class="toctree-l2 has-children"><a class="reference internal" href="../api_spec/autorag.html">autorag package</a><input class="toctree-checkbox" id="toctree-checkbox-15" name="toctree-checkbox-15" role="switch" type="checkbox"/><label for="toctree-checkbox-15"><div class="visually-hidden">Toggle navigation of autorag package</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
-<li class="toctree-l3 has-children"><a class="reference internal" href="../api_spec/autorag.data.html">autorag.data package</a><input class="toctree-checkbox" id="toctree-checkbox-16" name="toctree-checkbox-16" role="switch" type="checkbox"/><label for="toctree-checkbox-16"><div class="visually-hidden">Toggle navigation of autorag.data package</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
-<li class="toctree-l4"><a class="reference internal" href="../api_spec/autorag.data.chunk.html">autorag.data.chunk package</a></li>
-<li class="toctree-l4 has-children"><a class="reference internal" href="../api_spec/autorag.data.legacy.html">autorag.data.legacy package</a><input class="toctree-checkbox" id="toctree-checkbox-17" name="toctree-checkbox-17" role="switch" type="checkbox"/><label for="toctree-checkbox-17"><div class="visually-hidden">Toggle navigation of autorag.data.legacy package</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
-<li class="toctree-l5"><a class="reference internal" href="../api_spec/autorag.data.legacy.corpus.html">autorag.data.legacy.corpus package</a></li>
-<li class="toctree-l5"><a class="reference internal" href="../api_spec/autorag.data.legacy.qacreation.html">autorag.data.legacy.qacreation package</a></li>
-</ul>
-</li>
-<li class="toctree-l4"><a class="reference internal" href="../api_spec/autorag.data.parse.html">autorag.data.parse package</a></li>
-<li class="toctree-l4 has-children"><a class="reference internal" href="../api_spec/autorag.data.qa.html">autorag.data.qa package</a><input class="toctree-checkbox" id="toctree-checkbox-18" name="toctree-checkbox-18" role="switch" type="checkbox"/><label for="toctree-checkbox-18"><div class="visually-hidden">Toggle navigation of autorag.data.qa package</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
-<li class="toctree-l5"><a class="reference internal" href="../api_spec/autorag.data.qa.evolve.html">autorag.data.qa.evolve package</a></li>
-<li class="toctree-l5"><a class="reference internal" href="../api_spec/autorag.data.qa.filter.html">autorag.data.qa.filter package</a></li>
-<li class="toctree-l5"><a class="reference internal" href="../api_spec/autorag.data.qa.generation_gt.html">autorag.data.qa.generation_gt package</a></li>
-<li class="toctree-l5"><a class="reference internal" href="../api_spec/autorag.data.qa.query.html">autorag.data.qa.query package</a></li>
-</ul>
-</li>
-<li class="toctree-l4"><a class="reference internal" href="../api_spec/autorag.data.utils.html">autorag.data.utils package</a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="../api_spec/autorag.deploy.html">autorag.deploy package</a></li>
-<li class="toctree-l3 has-children"><a class="reference internal" href="../api_spec/autorag.evaluation.html">autorag.evaluation package</a><input class="toctree-checkbox" id="toctree-checkbox-19" name="toctree-checkbox-19" role="switch" type="checkbox"/><label for="toctree-checkbox-19"><div class="visually-hidden">Toggle navigation of autorag.evaluation package</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
-<li class="toctree-l4"><a class="reference internal" href="../api_spec/autorag.evaluation.metric.html">autorag.evaluation.metric package</a></li>
-</ul>
-</li>
-<li class="toctree-l3 has-children"><a class="reference internal" href="../api_spec/autorag.nodes.html">autorag.nodes package</a><input class="toctree-checkbox" id="toctree-checkbox-20" name="toctree-checkbox-20" role="switch" type="checkbox"/><label for="toctree-checkbox-20"><div class="visually-hidden">Toggle navigation of autorag.nodes package</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
-<li class="toctree-l4"><a class="reference internal" href="../api_spec/autorag.nodes.generator.html">autorag.nodes.generator package</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../api_spec/autorag.nodes.passageaugmenter.html">autorag.nodes.passageaugmenter package</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../api_spec/autorag.nodes.passagecompressor.html">autorag.nodes.passagecompressor package</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../api_spec/autorag.nodes.passagefilter.html">autorag.nodes.passagefilter package</a></li>
-<li class="toctree-l4 has-children"><a class="reference internal" href="../api_spec/autorag.nodes.passagereranker.html">autorag.nodes.passagereranker package</a><input class="toctree-checkbox" id="toctree-checkbox-21" name="toctree-checkbox-21" role="switch" type="checkbox"/><label for="toctree-checkbox-21"><div class="visually-hidden">Toggle navigation of autorag.nodes.passagereranker package</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
-<li class="toctree-l5"><a class="reference internal" href="../api_spec/autorag.nodes.passagereranker.tart.html">autorag.nodes.passagereranker.tart package</a></li>
-</ul>
-</li>
-<li class="toctree-l4"><a class="reference internal" href="../api_spec/autorag.nodes.promptmaker.html">autorag.nodes.promptmaker package</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../api_spec/autorag.nodes.queryexpansion.html">autorag.nodes.queryexpansion package</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../api_spec/autorag.nodes.retrieval.html">autorag.nodes.retrieval package</a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="../api_spec/autorag.schema.html">autorag.schema package</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../api_spec/autorag.utils.html">autorag.utils package</a></li>
-</ul>
-</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../api_spec/modules.html">autorag</a><input class="toctree-checkbox" id="toctree-checkbox-16" name="toctree-checkbox-16" role="switch" type="checkbox"/><label for="toctree-checkbox-16"><div class="visually-hidden">Toggle navigation of autorag</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="simple">
 </ul>
 </li>
 </ul>
@@ -433,8 +419,8 @@
 <section id="running-api-server">
 <h2>Running API server<a class="headerlink" href="#running-api-server" title="Link to this heading">¶</a></h2>
 <p>As mentioned in the tutorial, you can run api server as follows:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">autorag.deploy</span> <span class="kn">import</span> <span class="n">ApiRunner</span>
-<span class="kn">import</span> <span class="nn">nest_asyncio</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">autorag.deploy</span><span class="w"> </span><span class="kn">import</span> <span class="n">ApiRunner</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">nest_asyncio</span>
 
 <span class="n">nest_asyncio</span><span class="o">.</span><span class="n">apply</span><span class="p">()</span>
 
@@ -443,8 +429,8 @@
 </pre></div>
 </div>
 <p>or</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">autorag.deploy</span> <span class="kn">import</span> <span class="n">ApiRunner</span>
-<span class="kn">import</span> <span class="nn">nest_asyncio</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">autorag.deploy</span><span class="w"> </span><span class="kn">import</span> <span class="n">ApiRunner</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">nest_asyncio</span>
 
 <span class="n">nest_asyncio</span><span class="o">.</span><span class="n">apply</span><span class="p">()</span>
 
@@ -456,21 +442,21 @@
 </pre></div>
 </div>
 </section>
-<section id="id1">
-<h2>API Endpoint<a class="headerlink" href="#id1" title="Link to this heading">¶</a></h2>
-<p>Certainly! To generate API endpoint documentation in Markdown format from the provided OpenAPI specification, we need to break down each endpoint and describe its purpose, request parameters, and response structure. Here’s how you can document the API:</p>
+<section id="use-ngrok-tunnel-for-public-access">
+<h2>Use NGrok Tunnel for public access<a class="headerlink" href="#use-ngrok-tunnel-for-public-access" title="Link to this heading">¶</a></h2>
+<p>For accessing the API server from the public, you can use the NGrok tunnel service.
+It automatically creates ngrok tunnel to your local server.</p>
+<p>You can see the logs of the public URL like below:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">INFO</span>     <span class="p">[</span><span class="n">api</span><span class="o">.</span><span class="n">py</span><span class="p">:</span><span class="mi">199</span><span class="p">]</span> <span class="o">&gt;&gt;</span> <span class="n">Public</span> <span class="n">API</span> <span class="n">URL</span><span class="p">:</span>          <span class="n">api</span><span class="o">.</span><span class="n">py</span><span class="p">:</span><span class="mi">199</span>
+         <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="mi">8</span><span class="n">a31</span><span class="o">-</span><span class="mi">14</span><span class="o">-</span><span class="mi">52</span><span class="o">-</span><span class="mi">132</span><span class="o">-</span><span class="mf">205.</span><span class="n">ngrok</span><span class="o">-</span><span class="n">free</span><span class="o">.</span><span class="n">app</span>
+</pre></div>
+</div>
+<p>This is the URL to your local server, so use it as the host at request.</p>
 </section>
-<hr class="docutils" />
-<section id="example-api-documentation">
-<h2>Example API Documentation<a class="headerlink" href="#example-api-documentation" title="Link to this heading">¶</a></h2>
-<section id="version-1-0-0">
-<h3>Version: 1.0.0<a class="headerlink" href="#version-1-0-0" title="Link to this heading">¶</a></h3>
-</section>
-<hr class="docutils" />
 <section id="endpoints">
-<h3>Endpoints<a class="headerlink" href="#endpoints" title="Link to this heading">¶</a></h3>
+<h2>Endpoints<a class="headerlink" href="#endpoints" title="Link to this heading">¶</a></h2>
 <section id="v1-run-post">
-<h4>1. <code class="docutils literal notranslate"><span class="pre">/v1/run</span></code> (POST)<a class="headerlink" href="#v1-run-post" title="Link to this heading">¶</a></h4>
+<h3>1. <code class="docutils literal notranslate"><span class="pre">/v1/run</span></code> (POST)<a class="headerlink" href="#v1-run-post" title="Link to this heading">¶</a></h3>
 <ul class="simple">
 <li><p><strong>Summary</strong>: Run a query and get generated text with retrieved passages.</p></li>
 <li><p><strong>Request Body</strong>:</p>
@@ -504,6 +490,7 @@
 <ul>
 <li><p><code class="docutils literal notranslate"><span class="pre">content</span></code> (string): The content of the passage.</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">doc_id</span></code> (string): Document ID.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">score</span></code> (string): The relevance score of the retrieved passage.</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">filepath</span></code> (string, nullable): File path.</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">file_page</span></code> (integer, nullable): File page number.</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">start_idx</span></code> (integer, nullable): Start index.</p></li>
@@ -523,8 +510,84 @@
 </ul>
 </section>
 <hr class="docutils" />
+<section id="v1-retrieve-post">
+<h3>2. <code class="docutils literal notranslate"><span class="pre">/v1/retrieve</span></code> (POST)<a class="headerlink" href="#v1-retrieve-post" title="Link to this heading">¶</a></h3>
+<p>This API endpoint allows developers to retrieve documents based on a specified query.
+It will ignore generator and prompt maker, only return retrieved passages.</p>
+<p>The request must include a JSON object with the following structure:</p>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+<span class="w">  </span><span class="nt">&quot;query&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;your query string here&quot;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<section id="parameters">
+<h4>Parameters<a class="headerlink" href="#parameters" title="Link to this heading">¶</a></h4>
+<ul class="simple">
+<li><p><strong>query</strong> (string, required): The search string used to retrieve documents.</p></li>
+</ul>
+</section>
+</section>
+<section id="example-request">
+<h3>Example Request<a class="headerlink" href="#example-request" title="Link to this heading">¶</a></h3>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+<span class="w">  </span><span class="nt">&quot;query&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;latest trends in AI&quot;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<section id="success-response">
+<h4>Success Response<a class="headerlink" href="#success-response" title="Link to this heading">¶</a></h4>
+<p><strong>HTTP Status Code:</strong> <code class="docutils literal notranslate"><span class="pre">200</span> <span class="pre">OK</span></code></p>
+</section>
+</section>
+<section id="response-body">
+<h3>Response Body<a class="headerlink" href="#response-body" title="Link to this heading">¶</a></h3>
+<section id="properties">
+<h4>Properties<a class="headerlink" href="#properties" title="Link to this heading">¶</a></h4>
+<ul class="simple">
+<li><p><strong>passages</strong> (array): An array of documents retrieved based on the query.</p>
+<ul>
+<li><p><strong>doc_id</strong> (string): The unique identifier for each document.</p></li>
+<li><p><strong>content</strong> (string): The content of the retrieved document.</p></li>
+<li><p><strong>score</strong> (number, float): The relevance score of the retrieved document.</p></li>
+<li><p><strong>filepath</strong> (string, optional): The file path of the document.</p></li>
+<li><p><strong>file_page</strong> (integer, optional): The page number of the document.</p></li>
+<li><p><strong>start_idx</strong> (integer, optional): The start index of the retrieved passage from the parsed data.</p></li>
+<li><p><strong>end_idx</strong> (integer, optional): The end index of the retrieved passage from the parsed data.</p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="example-response">
+<h4>Example Response<a class="headerlink" href="#example-response" title="Link to this heading">¶</a></h4>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+<span class="w">  </span><span class="nt">&quot;passages&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">&quot;doc_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;doc123&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;content&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Artificial Intelligence is transforming industries.&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;score&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">0.98</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;filepath&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;path/to/file&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;file_page&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;start_idx&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">100</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;end_idx&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">150</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">&quot;doc_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;doc456&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;content&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;The future of AI includes advancements in machine learning.&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;score&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">0.92</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;filepath&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;file_page&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;start_idx&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;end_idx&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">  </span><span class="p">]</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</section>
+</section>
+<hr class="docutils" />
 <section id="v1-stream-post">
-<h4>2. <code class="docutils literal notranslate"><span class="pre">/v1/stream</span></code> (POST)<a class="headerlink" href="#v1-stream-post" title="Link to this heading">¶</a></h4>
+<h3>3. <code class="docutils literal notranslate"><span class="pre">/v1/stream</span></code> (POST)<a class="headerlink" href="#v1-stream-post" title="Link to this heading">¶</a></h3>
 <ul class="simple">
 <li><p><strong>Summary</strong>: Stream generated text with retrieved passages.</p></li>
 <li><p><strong>Description</strong>: This endpoint streams the generated text line by line. The <code class="docutils literal notranslate"><span class="pre">retrieved_passage</span></code> is sent first, followed by the <code class="docutils literal notranslate"><span class="pre">result</span></code> streamed incrementally.</p></li>
@@ -552,13 +615,15 @@
 <ul>
 <li><p><strong>Properties</strong>:</p>
 <ul>
-<li><p><code class="docutils literal notranslate"><span class="pre">result</span></code> (string or array of strings): The result text or list of texts (streamed line by line).</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">retrieved_passage</span></code> (array of objects): List of retrieved passages.</p>
+<li><p><code class="docutils literal notranslate"><span class="pre">type</span></code> (generated_text or retrieved_passage): If it is generated_text, you can see only the generated text. If it is retrieved_passage, you can see the retrieved passage and passage_index.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">generated_text</span></code> (string): The generated text from the generator (LLM). The result of the RAG system.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">retrieved_passage</span></code> (object): Retrieved passage.</p>
 <ul>
 <li><p><strong>Properties</strong>:</p>
 <ul>
 <li><p><code class="docutils literal notranslate"><span class="pre">content</span></code> (string): The content of the passage.</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">doc_id</span></code> (string): Document ID.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">score</span></code> (string): The relevance score of the retrieved passage.</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">filepath</span></code> (string, nullable): File path.</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">file_page</span></code> (integer, nullable): File page number.</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">start_idx</span></code> (integer, nullable): Start index.</p></li>
@@ -567,6 +632,7 @@
 </li>
 </ul>
 </li>
+<li><p><code class="docutils literal notranslate"><span class="pre">passage_index</span></code> (integer): Index of the retrieved passage.</p></li>
 </ul>
 </li>
 </ul>
@@ -579,7 +645,7 @@
 </section>
 <hr class="docutils" />
 <section id="version-get">
-<h4>3. <code class="docutils literal notranslate"><span class="pre">/version</span></code> (GET)<a class="headerlink" href="#version-get" title="Link to this heading">¶</a></h4>
+<h3>4. <code class="docutils literal notranslate"><span class="pre">/version</span></code> (GET)<a class="headerlink" href="#version-get" title="Link to this heading">¶</a></h3>
 <ul class="simple">
 <li><p><strong>Summary</strong>: Get the API version.</p></li>
 <li><p><strong>Description</strong>: Returns the current version of the API as a string.</p></li>
@@ -604,7 +670,6 @@
 </ul>
 </section>
 </section>
-</section>
 <hr class="docutils" />
 <section id="api-client-usage-example">
 <h2>API client usage example<a class="headerlink" href="#api-client-usage-example" title="Link to this heading">¶</a></h2>
@@ -616,13 +681,13 @@
 </pre></div>
 </div>
 <p>Here’s the Python client code for each endpoint:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">requests</span>
-<span class="kn">import</span> <span class="nn">json</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">requests</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">autorag.utils.util</span><span class="w"> </span><span class="kn">import</span> <span class="n">decode_multiple_json_from_bytes</span>
 
 <span class="c1"># Base URL of the API</span>
 <span class="n">BASE_URL</span> <span class="o">=</span> <span class="s2">&quot;http://example.com:8000&quot;</span>  <span class="c1"># Replace with the actual base URL of the API</span>
 
-<span class="k">def</span> <span class="nf">run_query</span><span class="p">(</span><span class="n">query</span><span class="p">,</span> <span class="n">result_column</span><span class="o">=</span><span class="s2">&quot;generated_texts&quot;</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">run_query</span><span class="p">(</span><span class="n">query</span><span class="p">,</span> <span class="n">result_column</span><span class="o">=</span><span class="s2">&quot;generated_texts&quot;</span><span class="p">):</span>
     <span class="n">url</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">BASE_URL</span><span class="si">}</span><span class="s2">/v1/run&quot;</span>
     <span class="n">payload</span> <span class="o">=</span> <span class="p">{</span>
         <span class="s2">&quot;query&quot;</span><span class="p">:</span> <span class="n">query</span><span class="p">,</span>
@@ -634,25 +699,32 @@
     <span class="k">else</span><span class="p">:</span>
         <span class="n">response</span><span class="o">.</span><span class="n">raise_for_status</span><span class="p">()</span>
 
-<span class="k">def</span> <span class="nf">stream_query</span><span class="p">(</span><span class="n">query</span><span class="p">,</span> <span class="n">result_column</span><span class="o">=</span><span class="s2">&quot;generated_texts&quot;</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">stream_query</span><span class="p">(</span><span class="n">query</span><span class="p">,</span> <span class="n">result_column</span><span class="o">=</span><span class="s2">&quot;generated_texts&quot;</span><span class="p">):</span>
     <span class="n">url</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">BASE_URL</span><span class="si">}</span><span class="s2">/v1/stream&quot;</span>
     <span class="n">payload</span> <span class="o">=</span> <span class="p">{</span>
         <span class="s2">&quot;query&quot;</span><span class="p">:</span> <span class="n">query</span><span class="p">,</span>
         <span class="s2">&quot;result_column&quot;</span><span class="p">:</span> <span class="n">result_column</span>
     <span class="p">}</span>
-    <span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">post</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">json</span><span class="o">=</span><span class="n">payload</span><span class="p">,</span> <span class="n">stream</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-    <span class="k">if</span> <span class="n">response</span><span class="o">.</span><span class="n">status_code</span> <span class="o">==</span> <span class="mi">200</span><span class="p">:</span>
-        <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">chunk</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">response</span><span class="o">.</span><span class="n">iter_content</span><span class="p">(</span><span class="n">chunk_size</span><span class="o">=</span><span class="kc">None</span><span class="p">)):</span>
-            <span class="k">if</span> <span class="n">chunk</span><span class="p">:</span>
-                <span class="c1"># Decode the chunk and print it</span>
-                <span class="n">data</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">loads</span><span class="p">(</span><span class="n">chunk</span><span class="o">.</span><span class="n">decode</span><span class="p">(</span><span class="s2">&quot;utf-8&quot;</span><span class="p">))</span>
-                <span class="k">if</span> <span class="n">i</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
-                    <span class="n">retrieved_passages</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="s2">&quot;retrieved_passage&quot;</span><span class="p">]</span> <span class="c1"># The retrieved passages</span>
-                <span class="nb">print</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="s2">&quot;result&quot;</span><span class="p">],</span> <span class="n">end</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">)</span>
-    <span class="k">else</span><span class="p">:</span>
-        <span class="n">response</span><span class="o">.</span><span class="n">raise_for_status</span><span class="p">()</span>
+    <span class="k">with</span> <span class="n">requests</span><span class="o">.</span><span class="n">Session</span><span class="p">()</span> <span class="k">as</span> <span class="n">session</span><span class="p">:</span>
+      <span class="n">response</span> <span class="o">=</span> <span class="n">session</span><span class="o">.</span><span class="n">post</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">json</span><span class="o">=</span><span class="n">payload</span><span class="p">,</span> <span class="n">stream</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+      <span class="n">retrieved_passages</span> <span class="o">=</span> <span class="p">[]</span> <span class="c1"># This will store retrieved passages</span>
 
-<span class="k">def</span> <span class="nf">get_version</span><span class="p">():</span>
+      <span class="c1"># Check if the request was successful</span>
+      <span class="k">if</span> <span class="n">response</span><span class="o">.</span><span class="n">status_code</span> <span class="o">==</span> <span class="mi">200</span><span class="p">:</span>
+          <span class="c1"># Process the streaming response</span>
+          <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">chunk</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">response</span><span class="o">.</span><span class="n">iter_content</span><span class="p">(</span><span class="n">chunk_size</span><span class="o">=</span><span class="kc">None</span><span class="p">)):</span>
+              <span class="k">if</span> <span class="n">chunk</span><span class="p">:</span>
+                  <span class="n">data_list</span> <span class="o">=</span> <span class="n">decode_multiple_json_from_bytes</span><span class="p">(</span><span class="n">chunk</span><span class="p">)</span>
+                  <span class="k">for</span> <span class="n">data</span> <span class="ow">in</span> <span class="n">data_list</span><span class="p">:</span>
+                      <span class="k">if</span> <span class="n">data</span><span class="p">[</span><span class="s2">&quot;type&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;retrieved_passage&quot;</span><span class="p">:</span>
+                          <span class="n">retrieved_passages</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="s2">&quot;retrieved_passage&quot;</span><span class="p">])</span>
+                      <span class="k">else</span><span class="p">:</span>
+                          <span class="nb">print</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="s2">&quot;generated_text&quot;</span><span class="p">],</span> <span class="n">end</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">)</span> <span class="c1"># Stream the generated texts</span>
+      <span class="k">else</span><span class="p">:</span>
+          <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Request failed with status code: </span><span class="si">{</span><span class="n">response</span><span class="o">.</span><span class="n">status_code</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+          <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Response content: </span><span class="si">{</span><span class="n">response</span><span class="o">.</span><span class="n">text</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">get_version</span><span class="p">():</span>
     <span class="n">url</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">BASE_URL</span><span class="si">}</span><span class="s2">/version&quot;</span>
     <span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">url</span><span class="p">)</span>
     <span class="k">if</span> <span class="n">response</span><span class="o">.</span><span class="n">status_code</span> <span class="o">==</span> <span class="mi">200</span><span class="p">:</span>
@@ -679,16 +751,16 @@
 <section id="curl-commands">
 <h3><code class="docutils literal notranslate"><span class="pre">curl</span></code> Commands<a class="headerlink" href="#curl-commands" title="Link to this heading">¶</a></h3>
 <p>Here are the equivalent <code class="docutils literal notranslate"><span class="pre">curl</span></code> commands for each endpoint:</p>
-<section id="id2">
-<h4><code class="docutils literal notranslate"><span class="pre">/v1/run</span></code> (POST)<a class="headerlink" href="#id2" title="Link to this heading">¶</a></h4>
+<section id="id1">
+<h4><code class="docutils literal notranslate"><span class="pre">/v1/run</span></code> (POST)<a class="headerlink" href="#id1" title="Link to this heading">¶</a></h4>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>curl<span class="w"> </span>-X<span class="w"> </span>POST<span class="w"> </span><span class="s2">&quot;http://example.com/v1/run&quot;</span><span class="w"> </span><span class="se">\</span>
 <span class="w">     </span>-H<span class="w"> </span><span class="s2">&quot;Content-Type: application/json&quot;</span><span class="w"> </span><span class="se">\</span>
 <span class="w">     </span>-d<span class="w"> </span><span class="s1">&#39;{&quot;query&quot;: &quot;example query&quot;, &quot;result_column&quot;: &quot;generated_texts&quot;}&#39;</span>
 </pre></div>
 </div>
 </section>
-<section id="id3">
-<h4><code class="docutils literal notranslate"><span class="pre">/v1/stream</span></code> (POST)<a class="headerlink" href="#id3" title="Link to this heading">¶</a></h4>
+<section id="id2">
+<h4><code class="docutils literal notranslate"><span class="pre">/v1/stream</span></code> (POST)<a class="headerlink" href="#id2" title="Link to this heading">¶</a></h4>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>curl<span class="w"> </span>-X<span class="w"> </span>POST<span class="w"> </span><span class="s2">&quot;http://example.com/v1/stream&quot;</span><span class="w"> </span><span class="se">\</span>
 <span class="w">     </span>-H<span class="w"> </span><span class="s2">&quot;Content-Type: application/json&quot;</span><span class="w"> </span><span class="se">\</span>
 <span class="w">     </span>-d<span class="w"> </span><span class="s1">&#39;{&quot;query&quot;: &quot;example query&quot;, &quot;result_column&quot;: &quot;generated_texts&quot;}&#39;</span><span class="w"> </span><span class="se">\</span>
@@ -696,6 +768,14 @@
 </pre></div>
 </div>
 </section>
+</section>
+<section id="id3">
+<h3><code class="docutils literal notranslate"><span class="pre">/v1/retrieve</span></code> (POST)<a class="headerlink" href="#id3" title="Link to this heading">¶</a></h3>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>curl<span class="w"> </span>-X<span class="w"> </span>POST<span class="w"> </span><span class="s2">&quot;http://example.com/v1/retrieve&quot;</span><span class="w"> </span><span class="se">\</span>
+<span class="w">     </span>-H<span class="w"> </span><span class="s2">&quot;Content-Type: application/json&quot;</span><span class="w"> </span><span class="se">\</span>
+<span class="w">     </span>-d<span class="w"> </span><span class="s1">&#39;{&quot;query&quot;: &quot;example query&quot;}&#39;</span>
+</pre></div>
+</div>
 <section id="id4">
 <h4><code class="docutils literal notranslate"><span class="pre">/version</span></code> (GET)<a class="headerlink" href="#id4" title="Link to this heading">¶</a></h4>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>curl<span class="w"> </span>-X<span class="w"> </span>GET<span class="w"> </span><span class="s2">&quot;http://example.com/version&quot;</span>
@@ -720,14 +800,14 @@
               </div>
               <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
             </a>
-          <a class="prev-page" href="../nodes/generator/openai_llm.html">
+          <a class="prev-page" href="../nodes/generator/vllm_api.html">
               <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
               <div class="page-info">
                 <div class="context">
                   <span>Previous</span>
                 </div>
                 
-                <div class="title">OpenAI LLM</div>
+                <div class="title">vLLM API</div>
                 
               </div>
             </a>
@@ -763,22 +843,34 @@
             <ul>
 <li><a class="reference internal" href="#">API endpoint</a><ul>
 <li><a class="reference internal" href="#running-api-server">Running API server</a></li>
-<li><a class="reference internal" href="#id1">API Endpoint</a></li>
-<li><a class="reference internal" href="#example-api-documentation">Example API Documentation</a><ul>
-<li><a class="reference internal" href="#version-1-0-0">Version: 1.0.0</a></li>
+<li><a class="reference internal" href="#use-ngrok-tunnel-for-public-access">Use NGrok Tunnel for public access</a></li>
 <li><a class="reference internal" href="#endpoints">Endpoints</a><ul>
 <li><a class="reference internal" href="#v1-run-post">1. <code class="docutils literal notranslate"><span class="pre">/v1/run</span></code> (POST)</a></li>
-<li><a class="reference internal" href="#v1-stream-post">2. <code class="docutils literal notranslate"><span class="pre">/v1/stream</span></code> (POST)</a></li>
-<li><a class="reference internal" href="#version-get">3. <code class="docutils literal notranslate"><span class="pre">/version</span></code> (GET)</a></li>
+<li><a class="reference internal" href="#v1-retrieve-post">2. <code class="docutils literal notranslate"><span class="pre">/v1/retrieve</span></code> (POST)</a><ul>
+<li><a class="reference internal" href="#parameters">Parameters</a></li>
 </ul>
 </li>
+<li><a class="reference internal" href="#example-request">Example Request</a><ul>
+<li><a class="reference internal" href="#success-response">Success Response</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#response-body">Response Body</a><ul>
+<li><a class="reference internal" href="#properties">Properties</a></li>
+<li><a class="reference internal" href="#example-response">Example Response</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#v1-stream-post">3. <code class="docutils literal notranslate"><span class="pre">/v1/stream</span></code> (POST)</a></li>
+<li><a class="reference internal" href="#version-get">4. <code class="docutils literal notranslate"><span class="pre">/version</span></code> (GET)</a></li>
 </ul>
 </li>
 <li><a class="reference internal" href="#api-client-usage-example">API client usage example</a><ul>
 <li><a class="reference internal" href="#python-sample-code">Python Sample Code</a></li>
 <li><a class="reference internal" href="#curl-commands"><code class="docutils literal notranslate"><span class="pre">curl</span></code> Commands</a><ul>
-<li><a class="reference internal" href="#id2"><code class="docutils literal notranslate"><span class="pre">/v1/run</span></code> (POST)</a></li>
-<li><a class="reference internal" href="#id3"><code class="docutils literal notranslate"><span class="pre">/v1/stream</span></code> (POST)</a></li>
+<li><a class="reference internal" href="#id1"><code class="docutils literal notranslate"><span class="pre">/v1/run</span></code> (POST)</a></li>
+<li><a class="reference internal" href="#id2"><code class="docutils literal notranslate"><span class="pre">/v1/stream</span></code> (POST)</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#id3"><code class="docutils literal notranslate"><span class="pre">/v1/retrieve</span></code> (POST)</a><ul>
 <li><a class="reference internal" href="#id4"><code class="docutils literal notranslate"><span class="pre">/version</span></code> (GET)</a></li>
 </ul>
 </li>

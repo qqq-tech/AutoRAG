@@ -15,12 +15,12 @@
         gtag('js', new Date());
         gtag('config', 'G-T8ZKQM6RT9');
     </script>
-    <link rel="index" title="Index" href="genindex.html" /><link rel="search" title="Search" href="search.html" /><link rel="next" title="Evaluation data creation tutorial" href="data_creation/tutorial.html" /><link rel="prev" title="TroubleShooting" href="troubleshooting.html" />
+    <link rel="index" title="Index" href="genindex.html" /><link rel="search" title="Search" href="search.html" /><link rel="next" title="Migration Guide" href="migration.html" /><link rel="prev" title="TroubleShooting" href="troubleshooting.html" />
         <link rel="canonical" href="https://docs.auto-rag.com/local_model.html" />
 
-    <!-- Generated with Sphinx 8.1.0 and Furo 2024.08.06 -->
+    <!-- Generated with Sphinx 8.1.3 and Furo 2024.08.06 -->
         <title>Configure LLM &amp; Embedding models - AutoRAG documentation</title>
-      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=a746c00c" />
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=8f2a1f02" />
     <link rel="stylesheet" type="text/css" href="_static/styles/furo.css?v=354aac6f" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
     <link rel="stylesheet" type="text/css" href="_static/tabs.css?v=4c969af8" />
@@ -221,6 +221,12 @@
 <li class="toctree-l1"><a class="reference internal" href="structure.html">Structure</a></li>
 <li class="toctree-l1"><a class="reference internal" href="troubleshooting.html">TroubleShooting</a></li>
 <li class="toctree-l1 current current-page"><a class="current reference internal" href="#">Configure LLM &amp; Embedding models</a></li>
+<li class="toctree-l1"><a class="reference internal" href="migration.html">Migration Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="test_your_rag.html">Evaluate your RAG</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">AutoRAG GUI</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="gui/gui.html">AutoRAG GUI</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Data Creation</span></p>
 <ul>
@@ -260,6 +266,26 @@
 <li class="toctree-l1"><a class="reference internal" href="optimization/folder_structure.html">Folder Structure</a></li>
 <li class="toctree-l1"><a class="reference internal" href="optimization/custom_config.html">Make a custom config YAML file</a></li>
 <li class="toctree-l1"><a class="reference internal" href="optimization/strategies.html">Strategy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="optimization/sample_config.html">Sample YAML file guide</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Integration</span></p>
+<ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="integration/llm/llm.html">Configure LLM</a><input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" role="switch" type="checkbox"/><label for="toctree-checkbox-6"><div class="visually-hidden">Toggle navigation of Configure LLM</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="integration/llm/aws_bedrock.html">AWS Bedrock x AutoRAG</a></li>
+<li class="toctree-l2"><a class="reference internal" href="integration/llm/huggingface_llm.html">HuggingFace LLM x AutoRAG</a></li>
+<li class="toctree-l2"><a class="reference internal" href="integration/llm/nvidia_nim.html">Nvidia Nim x AutoRAG</a></li>
+<li class="toctree-l2"><a class="reference internal" href="integration/llm/ollama.html">OLLAMA x AutoRAG</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="integration/vectordb/vectordb.html">Configure Vector DB</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" role="switch" type="checkbox"/><label for="toctree-checkbox-7"><div class="visually-hidden">Toggle navigation of Configure Vector DB</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="integration/vectordb/chroma.html">Chroma</a></li>
+<li class="toctree-l2"><a class="reference internal" href="integration/vectordb/milvus.html">Milvus</a></li>
+<li class="toctree-l2"><a class="reference internal" href="integration/vectordb/weaviate.html">Weaviate</a></li>
+<li class="toctree-l2"><a class="reference internal" href="integration/vectordb/pinecone.html">Pinecone</a></li>
+<li class="toctree-l2"><a class="reference internal" href="integration/vectordb/couchbase.html">Couchbase</a></li>
+<li class="toctree-l2"><a class="reference internal" href="integration/vectordb/qdrant.html">Qdrant</a></li>
+</ul>
+</li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Evaluation Metrics</span></p>
 <ul>
@@ -270,24 +296,24 @@
 <p class="caption" role="heading"><span class="caption-text">Nodes &amp; Modules</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="nodes/index.html">Available List</a></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="nodes/query_expansion/query_expansion.html"><strong>1. Query Expansion</strong></a><input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" role="switch" type="checkbox"/><label for="toctree-checkbox-6"><div class="visually-hidden">Toggle navigation of 1. Query Expansion</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="nodes/query_expansion/query_expansion.html"><strong>1. Query Expansion</strong></a><input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" role="switch" type="checkbox"/><label for="toctree-checkbox-8"><div class="visually-hidden">Toggle navigation of 1. Query Expansion</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="nodes/query_expansion/query_decompose.html">Query Decompose</a></li>
 <li class="toctree-l2"><a class="reference internal" href="nodes/query_expansion/hyde.html">HyDE</a></li>
 <li class="toctree-l2"><a class="reference internal" href="nodes/query_expansion/multi_query_expansion.html">Multi Query Expansion</a></li>
 </ul>
 </li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="nodes/retrieval/retrieval.html">2. Retrieval</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" role="switch" type="checkbox"/><label for="toctree-checkbox-7"><div class="visually-hidden">Toggle navigation of 2. Retrieval</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="nodes/retrieval/retrieval.html">2. Retrieval</a><input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" role="switch" type="checkbox"/><label for="toctree-checkbox-9"><div class="visually-hidden">Toggle navigation of 2. Retrieval</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="nodes/retrieval/bm25.html">BM25</a></li>
 <li class="toctree-l2"><a class="reference internal" href="nodes/retrieval/vectordb.html">Vectordb</a></li>
 <li class="toctree-l2"><a class="reference internal" href="nodes/retrieval/hybrid_rrf.html">Hybrid - rrf</a></li>
 <li class="toctree-l2"><a class="reference internal" href="nodes/retrieval/hybrid_cc.html">Hybrid - cc</a></li>
 </ul>
 </li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="nodes/passage_augmenter/passage_augmenter.html">3. Passage Augmenter</a><input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" role="switch" type="checkbox"/><label for="toctree-checkbox-8"><div class="visually-hidden">Toggle navigation of 3. Passage Augmenter</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="nodes/passage_augmenter/passage_augmenter.html">3. Passage Augmenter</a><input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" role="switch" type="checkbox"/><label for="toctree-checkbox-10"><div class="visually-hidden">Toggle navigation of 3. Passage Augmenter</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="nodes/passage_augmenter/prev_next_augmenter.html">Prev Next Augmenter</a></li>
 </ul>
 </li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="nodes/passage_reranker/passage_reranker.html">4. Passage_Reranker</a><input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" role="switch" type="checkbox"/><label for="toctree-checkbox-9"><div class="visually-hidden">Toggle navigation of 4. Passage_Reranker</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="nodes/passage_reranker/passage_reranker.html">4. Passage_Reranker</a><input class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" role="switch" type="checkbox"/><label for="toctree-checkbox-11"><div class="visually-hidden">Toggle navigation of 4. Passage_Reranker</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="nodes/passage_reranker/upr.html">UPR</a></li>
 <li class="toctree-l2"><a class="reference internal" href="nodes/passage_reranker/tart.html">TART</a></li>
 <li class="toctree-l2"><a class="reference internal" href="nodes/passage_reranker/monot5.html">MonoT5</a></li>
@@ -303,9 +329,10 @@
 <li class="toctree-l2"><a class="reference internal" href="nodes/passage_reranker/openvino_reranker.html">OpenVINO Reranker</a></li>
 <li class="toctree-l2"><a class="reference internal" href="nodes/passage_reranker/voyageai_reranker.html">voyageai_reranker</a></li>
 <li class="toctree-l2"><a class="reference internal" href="nodes/passage_reranker/mixedbreadai_reranker.html">Mixedbread AI Reranker</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nodes/passage_reranker/flashrank_reranker.html">FlashRank Reranker</a></li>
 </ul>
 </li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="nodes/passage_filter/passage_filter.html">5. Passage Filter</a><input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" role="switch" type="checkbox"/><label for="toctree-checkbox-10"><div class="visually-hidden">Toggle navigation of 5. Passage Filter</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="nodes/passage_filter/passage_filter.html">5. Passage Filter</a><input class="toctree-checkbox" id="toctree-checkbox-12" name="toctree-checkbox-12" role="switch" type="checkbox"/><label for="toctree-checkbox-12"><div class="visually-hidden">Toggle navigation of 5. Passage Filter</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="nodes/passage_filter/similarity_threshold_cutoff.html">Similarity Threshold Cutoff</a></li>
 <li class="toctree-l2"><a class="reference internal" href="nodes/passage_filter/similarity_percentile_cutoff.html">Similarity Percentile Cutoff</a></li>
 <li class="toctree-l2"><a class="reference internal" href="nodes/passage_filter/recency_filter.html">Recency Filter</a></li>
@@ -313,22 +340,23 @@
 <li class="toctree-l2"><a class="reference internal" href="nodes/passage_filter/percentile_cutoff.html">Percentile Cutoff</a></li>
 </ul>
 </li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="nodes/passage_compressor/passage_compressor.html">6. Passage_Compressor</a><input class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" role="switch" type="checkbox"/><label for="toctree-checkbox-11"><div class="visually-hidden">Toggle navigation of 6. Passage_Compressor</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="nodes/passage_compressor/passage_compressor.html">6. Passage_Compressor</a><input class="toctree-checkbox" id="toctree-checkbox-13" name="toctree-checkbox-13" role="switch" type="checkbox"/><label for="toctree-checkbox-13"><div class="visually-hidden">Toggle navigation of 6. Passage_Compressor</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="nodes/passage_compressor/tree_summarize.html">Tree Summarize</a></li>
 <li class="toctree-l2"><a class="reference internal" href="nodes/passage_compressor/refine.html">Refine</a></li>
 <li class="toctree-l2"><a class="reference internal" href="nodes/passage_compressor/longllmlingua.html">Long LLM Lingua</a></li>
 </ul>
 </li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="nodes/prompt_maker/prompt_maker.html">7. Prompt Maker</a><input class="toctree-checkbox" id="toctree-checkbox-12" name="toctree-checkbox-12" role="switch" type="checkbox"/><label for="toctree-checkbox-12"><div class="visually-hidden">Toggle navigation of 7. Prompt Maker</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="nodes/prompt_maker/prompt_maker.html">7. Prompt Maker</a><input class="toctree-checkbox" id="toctree-checkbox-14" name="toctree-checkbox-14" role="switch" type="checkbox"/><label for="toctree-checkbox-14"><div class="visually-hidden">Toggle navigation of 7. Prompt Maker</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="nodes/prompt_maker/fstring.html">F-String</a></li>
 <li class="toctree-l2"><a class="reference internal" href="nodes/prompt_maker/long_context_reorder.html">Long Context Reorder</a></li>
 <li class="toctree-l2"><a class="reference internal" href="nodes/prompt_maker/window_replacement.html">Window Replacement</a></li>
 </ul>
 </li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="nodes/generator/generator.html">8. Generator</a><input class="toctree-checkbox" id="toctree-checkbox-13" name="toctree-checkbox-13" role="switch" type="checkbox"/><label for="toctree-checkbox-13"><div class="visually-hidden">Toggle navigation of 8. Generator</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="nodes/generator/generator.html">8. Generator</a><input class="toctree-checkbox" id="toctree-checkbox-15" name="toctree-checkbox-15" role="switch" type="checkbox"/><label for="toctree-checkbox-15"><div class="visually-hidden">Toggle navigation of 8. Generator</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="nodes/generator/llama_index_llm.html">llama_index LLM</a></li>
 <li class="toctree-l2"><a class="reference internal" href="nodes/generator/vllm.html">vllm</a></li>
 <li class="toctree-l2"><a class="reference internal" href="nodes/generator/openai_llm.html">OpenAI LLM</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nodes/generator/vllm_api.html">vLLM API</a></li>
 </ul>
 </li>
 </ul>
@@ -343,49 +371,7 @@
 </ul>
 <p class="caption" role="heading"><span class="caption-text">API Reference</span></p>
 <ul>
-<li class="toctree-l1 has-children"><a class="reference internal" href="api_spec/modules.html">autorag</a><input class="toctree-checkbox" id="toctree-checkbox-14" name="toctree-checkbox-14" role="switch" type="checkbox"/><label for="toctree-checkbox-14"><div class="visually-hidden">Toggle navigation of autorag</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
-<li class="toctree-l2 has-children"><a class="reference internal" href="api_spec/autorag.html">autorag package</a><input class="toctree-checkbox" id="toctree-checkbox-15" name="toctree-checkbox-15" role="switch" type="checkbox"/><label for="toctree-checkbox-15"><div class="visually-hidden">Toggle navigation of autorag package</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
-<li class="toctree-l3 has-children"><a class="reference internal" href="api_spec/autorag.data.html">autorag.data package</a><input class="toctree-checkbox" id="toctree-checkbox-16" name="toctree-checkbox-16" role="switch" type="checkbox"/><label for="toctree-checkbox-16"><div class="visually-hidden">Toggle navigation of autorag.data package</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
-<li class="toctree-l4"><a class="reference internal" href="api_spec/autorag.data.chunk.html">autorag.data.chunk package</a></li>
-<li class="toctree-l4 has-children"><a class="reference internal" href="api_spec/autorag.data.legacy.html">autorag.data.legacy package</a><input class="toctree-checkbox" id="toctree-checkbox-17" name="toctree-checkbox-17" role="switch" type="checkbox"/><label for="toctree-checkbox-17"><div class="visually-hidden">Toggle navigation of autorag.data.legacy package</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
-<li class="toctree-l5"><a class="reference internal" href="api_spec/autorag.data.legacy.corpus.html">autorag.data.legacy.corpus package</a></li>
-<li class="toctree-l5"><a class="reference internal" href="api_spec/autorag.data.legacy.qacreation.html">autorag.data.legacy.qacreation package</a></li>
-</ul>
-</li>
-<li class="toctree-l4"><a class="reference internal" href="api_spec/autorag.data.parse.html">autorag.data.parse package</a></li>
-<li class="toctree-l4 has-children"><a class="reference internal" href="api_spec/autorag.data.qa.html">autorag.data.qa package</a><input class="toctree-checkbox" id="toctree-checkbox-18" name="toctree-checkbox-18" role="switch" type="checkbox"/><label for="toctree-checkbox-18"><div class="visually-hidden">Toggle navigation of autorag.data.qa package</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
-<li class="toctree-l5"><a class="reference internal" href="api_spec/autorag.data.qa.evolve.html">autorag.data.qa.evolve package</a></li>
-<li class="toctree-l5"><a class="reference internal" href="api_spec/autorag.data.qa.filter.html">autorag.data.qa.filter package</a></li>
-<li class="toctree-l5"><a class="reference internal" href="api_spec/autorag.data.qa.generation_gt.html">autorag.data.qa.generation_gt package</a></li>
-<li class="toctree-l5"><a class="reference internal" href="api_spec/autorag.data.qa.query.html">autorag.data.qa.query package</a></li>
-</ul>
-</li>
-<li class="toctree-l4"><a class="reference internal" href="api_spec/autorag.data.utils.html">autorag.data.utils package</a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="api_spec/autorag.deploy.html">autorag.deploy package</a></li>
-<li class="toctree-l3 has-children"><a class="reference internal" href="api_spec/autorag.evaluation.html">autorag.evaluation package</a><input class="toctree-checkbox" id="toctree-checkbox-19" name="toctree-checkbox-19" role="switch" type="checkbox"/><label for="toctree-checkbox-19"><div class="visually-hidden">Toggle navigation of autorag.evaluation package</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
-<li class="toctree-l4"><a class="reference internal" href="api_spec/autorag.evaluation.metric.html">autorag.evaluation.metric package</a></li>
-</ul>
-</li>
-<li class="toctree-l3 has-children"><a class="reference internal" href="api_spec/autorag.nodes.html">autorag.nodes package</a><input class="toctree-checkbox" id="toctree-checkbox-20" name="toctree-checkbox-20" role="switch" type="checkbox"/><label for="toctree-checkbox-20"><div class="visually-hidden">Toggle navigation of autorag.nodes package</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
-<li class="toctree-l4"><a class="reference internal" href="api_spec/autorag.nodes.generator.html">autorag.nodes.generator package</a></li>
-<li class="toctree-l4"><a class="reference internal" href="api_spec/autorag.nodes.passageaugmenter.html">autorag.nodes.passageaugmenter package</a></li>
-<li class="toctree-l4"><a class="reference internal" href="api_spec/autorag.nodes.passagecompressor.html">autorag.nodes.passagecompressor package</a></li>
-<li class="toctree-l4"><a class="reference internal" href="api_spec/autorag.nodes.passagefilter.html">autorag.nodes.passagefilter package</a></li>
-<li class="toctree-l4 has-children"><a class="reference internal" href="api_spec/autorag.nodes.passagereranker.html">autorag.nodes.passagereranker package</a><input class="toctree-checkbox" id="toctree-checkbox-21" name="toctree-checkbox-21" role="switch" type="checkbox"/><label for="toctree-checkbox-21"><div class="visually-hidden">Toggle navigation of autorag.nodes.passagereranker package</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
-<li class="toctree-l5"><a class="reference internal" href="api_spec/autorag.nodes.passagereranker.tart.html">autorag.nodes.passagereranker.tart package</a></li>
-</ul>
-</li>
-<li class="toctree-l4"><a class="reference internal" href="api_spec/autorag.nodes.promptmaker.html">autorag.nodes.promptmaker package</a></li>
-<li class="toctree-l4"><a class="reference internal" href="api_spec/autorag.nodes.queryexpansion.html">autorag.nodes.queryexpansion package</a></li>
-<li class="toctree-l4"><a class="reference internal" href="api_spec/autorag.nodes.retrieval.html">autorag.nodes.retrieval package</a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="api_spec/autorag.schema.html">autorag.schema package</a></li>
-<li class="toctree-l3"><a class="reference internal" href="api_spec/autorag.utils.html">autorag.utils package</a></li>
-</ul>
-</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="api_spec/modules.html">autorag</a><input class="toctree-checkbox" id="toctree-checkbox-16" name="toctree-checkbox-16" role="switch" type="checkbox"/><label for="toctree-checkbox-16"><div class="visually-hidden">Toggle navigation of autorag</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="simple">
 </ul>
 </li>
 </ul>
@@ -463,31 +449,36 @@
 <li><p><a class="reference internal" href="nodes/query_expansion/query_decompose.html"><span class="std std-doc">query_decompose</span></a></p></li>
 <li><p><a class="reference internal" href="nodes/query_expansion/multi_query_expansion.html"><span class="std std-doc">multi_query_expansion</span></a></p></li>
 <li><p><a class="reference internal" href="nodes/passage_compressor/tree_summarize.html"><span class="std std-doc">tree_summarize</span></a></p></li>
+<li><p><a class="reference internal" href="nodes/passage_compressor/refine.html"><span class="std std-doc">refine</span></a></p></li>
 </ul>
 </section>
 <section id="supporting-llm-models">
-<h3>Supporting LLM models<a class="headerlink" href="#supporting-llm-models" title="Link to this heading">¶</a></h3>
-<p>We support most of the llm that LlamaIndex is supporting.
-To change the LLM model type, you can change the <code class="docutils literal notranslate"><span class="pre">llm</span></code> parameter to the following values:</p>
+<h3>Supporting LLM Models<a class="headerlink" href="#supporting-llm-models" title="Link to this heading">¶</a></h3>
+<p>We support most of the LLMs that LlamaIndex supports. You can use different types of LLM interfaces by configuring the <code class="docutils literal notranslate"><span class="pre">llm</span></code> parameter:</p>
 <div class="table-wrapper colwidths-auto docutils container">
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head text-center"><p>LLM Model Type</p></th>
 <th class="head text-center"><p>llm parameter</p></th>
+<th class="head"><p>Description</p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="row-even"><td class="text-center"><p>OpenAI</p></td>
 <td class="text-center"><p>openai</p></td>
+<td><p>For OpenAI models (GPT-3.5, GPT-4)</p></td>
 </tr>
-<tr class="row-odd"><td class="text-center"><p>HuggingFaceLLM</p></td>
-<td class="text-center"><p>huggingfacellm</p></td>
-</tr>
-<tr class="row-even"><td class="text-center"><p>OpenAILike</p></td>
+<tr class="row-odd"><td class="text-center"><p>OpenAILike</p></td>
 <td class="text-center"><p>openailike</p></td>
+<td><p>For models with OpenAI-compatible APIs (e.g., Mistral, Claude)</p></td>
 </tr>
-<tr class="row-odd"><td class="text-center"><p>Ollama</p></td>
+<tr class="row-even"><td class="text-center"><p>Ollama</p></td>
 <td class="text-center"><p>ollama</p></td>
+<td><p>For locally running Ollama models</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>Bedrock</p></td>
+<td class="text-center"><p>bedrock</p></td>
+<td><p>For AWS Bedrock models</p></td>
 </tr>
 </tbody>
 </table>
@@ -511,6 +502,54 @@ You can set the model parameter for LlamaIndex LLM initialization.
 The most frequently used parameters are <code class="docutils literal notranslate"><span class="pre">model</span></code>, <code class="docutils literal notranslate"><span class="pre">max_token</span></code>, and <code class="docutils literal notranslate"><span class="pre">temperature</span></code>.
 Please check what you can set for the model parameter
 at <a class="reference external" href="https://docs.llamaindex.ai/en/stable/module_guides/models/llms/">LlamaIndex LLM</a>.</p>
+<section id="using-huggingface-models">
+<h4>Using HuggingFace Models<a class="headerlink" href="#using-huggingface-models" title="Link to this heading">¶</a></h4>
+<p>There are two main ways to use HuggingFace models:</p>
+<ol class="arabic simple">
+<li><p><strong>Through OpenAILike Interface</strong> (Recommended for hosted API endpoints):</p></li>
+</ol>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">nodes</span><span class="p">:</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">node_line_name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">node_line_1</span>
+<span class="w">    </span><span class="nt">nodes</span><span class="p">:</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">node_type</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">generator</span>
+<span class="w">        </span><span class="nt">modules</span><span class="p">:</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">module_type</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">llama_index_llm</span>
+<span class="w">            </span><span class="nt">llm</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">openailike</span>
+<span class="w">            </span><span class="nt">model</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">mistralai/Mistral-7B-Instruct-v0.2</span>
+<span class="w">            </span><span class="nt">api_base</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">your_api_base</span>
+<span class="w">            </span><span class="nt">api_key</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">your_api_key</span>
+</pre></div>
+</div>
+<ol class="arabic simple" start="2">
+<li><p><strong>Through Direct HuggingFace Integration</strong> (For local deployment):</p></li>
+</ol>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">nodes</span><span class="p">:</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">node_line_name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">node_line_1</span>
+<span class="w">    </span><span class="nt">nodes</span><span class="p">:</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">node_type</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">generator</span>
+<span class="w">        </span><span class="nt">modules</span><span class="p">:</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">module_type</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">llama_index_llm</span>
+<span class="w">            </span><span class="nt">llm</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">huggingface</span>
+<span class="w">            </span><span class="nt">model_name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">mistralai/Mistral-7B-Instruct-v0.2</span>
+<span class="w">            </span><span class="nt">device_map</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;auto&quot;</span>
+<span class="w">            </span><span class="nt">model_kwargs</span><span class="p">:</span>
+<span class="w">              </span><span class="nt">torch_dtype</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;float16&quot;</span>
+</pre></div>
+</div>
+</section>
+<section id="common-parameters">
+<h4>Common Parameters<a class="headerlink" href="#common-parameters" title="Link to this heading">¶</a></h4>
+<p>The most frequently used parameters for LLM configuration are:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">model</span></code>: The model identifier or name</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">max_tokens</span></code>: Maximum number of tokens in the response</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">temperature</span></code>: Controls randomness in the output (0.0 to 1.0)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">api_base</span></code>: API endpoint URL (for hosted models)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">api_key</span></code>: Authentication key (if required)</p></li>
+</ul>
+<p>For a complete list of available parameters, please refer to the
+<a class="reference external" href="https://docs.llamaindex.ai/en/stable/module_guides/models/llms/">LlamaIndex LLM documentation</a>.</p>
+</section>
 </section>
 <section id="add-more-llm-models">
 <h3>Add more LLM models<a class="headerlink" href="#add-more-llm-models" title="Link to this heading">¶</a></h3>
@@ -524,8 +563,8 @@ The integration of llms must be installed to different packages.
 So, before add your model, you should find and install the right package for your model.
 You can find the package at <a class="reference external" href="https://pretty-sodium-5e0.notion.site/ce81b247649a44e4b6b35dfb24af28a6?v=53b3c2ced7bb4c9996b81b83c9f01139">here</a>.</p>
 </div>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">autorag</span>
-<span class="kn">from</span> <span class="nn">llama_index.core.llms.mock</span> <span class="kn">import</span> <span class="n">MockLLM</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">autorag</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">llama_index.core.llms.mock</span><span class="w"> </span><span class="kn">import</span> <span class="n">MockLLM</span>
 
 <span class="n">autorag</span><span class="o">.</span><span class="n">generator_models</span><span class="p">[</span><span class="s1">&#39;mockllm&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">MockLLM</span>
 </pre></div>
@@ -547,8 +586,45 @@ You can find the package at <a class="reference external" href="https://pretty-s
 <li><p><a class="reference internal" href="nodes/retrieval/vectordb.html"><span class="std std-doc">vectordb</span></a></p></li>
 </ul>
 </section>
-<section id="supporting-embedding-models">
-<h3>Supporting Embedding models<a class="headerlink" href="#supporting-embedding-models" title="Link to this heading">¶</a></h3>
+<section id="configure-the-model-name-in-the-yaml-file">
+<h3>Configure the model name in the YAML file<a class="headerlink" href="#configure-the-model-name-in-the-yaml-file" title="Link to this heading">¶</a></h3>
+<p>For easier use, since v0.3.13, we support configuring model name in the YAML file.</p>
+<p>We support this new configuration option, plus the legacy configuration option that is described below.
+So if you used before v0.3.13 version, it is okay to use the legacy configuration option.</p>
+<p>We support the following embedding model types:</p>
+<ul class="simple">
+<li><p>openai</p></li>
+<li><p>huggingface</p></li>
+<li><p>mock</p></li>
+<li><p>ollama</p></li>
+</ul>
+<p>You can configure the embedding model option directly in the YAML file <code class="docutils literal notranslate"><span class="pre">vectordb</span></code> section.
+If you want to know how to configure vectordb in AutoRAG,
+please go <a class="reference external" href="https://docs.auto-rag.com/integration/vectordb/vectordb.html">here</a>.</p>
+<p>For example,</p>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">vectordb</span><span class="p">:</span>
+<span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">autorag_test</span>
+<span class="w">  </span><span class="nt">db_type</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">milvus</span>
+<span class="w">  </span><span class="nt">embedding_model</span><span class="p">:</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">huggingface</span>
+<span class="w">    </span><span class="nt">model_name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">intfloat/multilingual-e5-large-instruct</span>
+<span class="w">  </span><span class="l l-Scalar l-Scalar-Plain">...</span>
+</pre></div>
+</div>
+<p>or</p>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">vectordb</span><span class="p">:</span>
+<span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">autorag_test</span>
+<span class="w">  </span><span class="nt">db_type</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">milvus</span>
+<span class="w">  </span><span class="nt">embedding_model</span><span class="p">:</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">openai</span>
+<span class="w">    </span><span class="nt">model_name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">text-embedding-3-small</span>
+<span class="w">  </span><span class="l l-Scalar l-Scalar-Plain">...</span>
+</pre></div>
+</div>
+<p>If you want to use your own embedding model, simply change the model_name at huggingface(or ollama) type embedding model configuration.</p>
+</section>
+<section id="supporting-embedding-models-legacy">
+<h3>Supporting Embedding models (Legacy)<a class="headerlink" href="#supporting-embedding-models-legacy" title="Link to this heading">¶</a></h3>
 <p>As default, we support OpenAI embedding models and some of the local models.
 To change the embedding model, you can change the <code class="docutils literal notranslate"><span class="pre">embedding_model</span></code> parameter to the following values:</p>
 <div class="table-wrapper colwidths-auto docutils container">
@@ -584,27 +660,33 @@ To change the embedding model, you can change the <code class="docutils literal 
 </table>
 </div>
 <p>For example, if you want to use OpenAI text embedding large model, you can set <code class="docutils literal notranslate"><span class="pre">embedding_model</span></code> parameter
-to <code class="docutils literal notranslate"><span class="pre">openai_embed_3_large</span></code>.</p>
-<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">nodes</span><span class="p">:</span>
+to <code class="docutils literal notranslate"><span class="pre">openai_embed_3_large</span></code> when setting vectordb.</p>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">vectordb</span><span class="p">:</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">chroma_openai</span>
+<span class="w">    </span><span class="nt">db_type</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">chroma</span>
+<span class="w">    </span><span class="nt">client_type</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">persistent</span>
+<span class="w">    </span><span class="nt">embedding_model</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">openai_embed_3_large</span>
+<span class="w">    </span><span class="nt">collection_name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">openai_embed_3_large</span>
+<span class="nt">nodes</span><span class="p">:</span>
 <span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">node_line_name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">node_line_1</span>
 <span class="w">    </span><span class="nt">nodes</span><span class="p">:</span>
 <span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">node_type</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">retrieval</span>
 <span class="w">        </span><span class="nt">modules</span><span class="p">:</span>
 <span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">module_type</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">vectordb</span>
-<span class="w">            </span><span class="nt">embedding_model</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">openai</span>
+<span class="w">            </span><span class="nt">vectordb</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">chroma_openai</span>
 </pre></div>
 </div>
 </section>
-<section id="add-your-embedding-models">
-<h3>Add your embedding models<a class="headerlink" href="#add-your-embedding-models" title="Link to this heading">¶</a></h3>
+<section id="add-your-embedding-models-legacy">
+<h3>Add your embedding models (Legacy)<a class="headerlink" href="#add-your-embedding-models-legacy" title="Link to this heading">¶</a></h3>
 <p>You can add more embedding models for AutoRAG.
 You can add it by simply calling <code class="docutils literal notranslate"><span class="pre">autorag.embedding_models</span></code> and add new key and value.
 For example,
 if you want to add <code class="docutils literal notranslate"><span class="pre">[KoSimCSE](https://huggingface.co/BM-K/KoSimCSE-roberta-multitask)</span></code> model for Korean embedding,
 execute the following code.</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">autorag</span>
-<span class="kn">from</span> <span class="nn">autorag</span> <span class="kn">import</span> <span class="n">LazyInit</span>
-<span class="kn">from</span> <span class="nn">llama_index.embeddings.huggingface</span> <span class="kn">import</span> <span class="n">HuggingFaceEmbedding</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">autorag</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">autorag</span><span class="w"> </span><span class="kn">import</span> <span class="n">LazyInit</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">llama_index.embeddings.huggingface</span><span class="w"> </span><span class="kn">import</span> <span class="n">HuggingFaceEmbedding</span>
 
 <span class="n">autorag</span><span class="o">.</span><span class="n">embedding_models</span><span class="p">[</span><span class="s1">&#39;kosimcse&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">LazyInit</span><span class="p">(</span><span class="n">HuggingFaceEmbedding</span><span class="p">,</span> <span class="n">model_name</span><span class="o">=</span><span class="s2">&quot;BM-K/KoSimCSE-roberta-multitask&quot;</span><span class="p">)</span>
 </pre></div>
@@ -628,12 +710,12 @@ module docs.</p>
       <footer>
         
         <div class="related-pages">
-          <a class="next-page" href="data_creation/tutorial.html">
+          <a class="next-page" href="migration.html">
               <div class="page-info">
                 <div class="context">
                   <span>Next</span>
                 </div>
-                <div class="title">Evaluation data creation tutorial</div>
+                <div class="title">Migration Guide</div>
               </div>
               <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
             </a>
@@ -682,14 +764,19 @@ module docs.</p>
 <li><a class="reference internal" href="#index">Index</a></li>
 <li><a class="reference internal" href="#configure-the-llm-model">Configure the LLM model</a><ul>
 <li><a class="reference internal" href="#modules-that-use-llm-model">Modules that use LLM model</a></li>
-<li><a class="reference internal" href="#supporting-llm-models">Supporting LLM models</a></li>
+<li><a class="reference internal" href="#supporting-llm-models">Supporting LLM Models</a><ul>
+<li><a class="reference internal" href="#using-huggingface-models">Using HuggingFace Models</a></li>
+<li><a class="reference internal" href="#common-parameters">Common Parameters</a></li>
+</ul>
+</li>
 <li><a class="reference internal" href="#add-more-llm-models">Add more LLM models</a></li>
 </ul>
 </li>
 <li><a class="reference internal" href="#configure-the-embedding-model">Configure the Embedding model</a><ul>
 <li><a class="reference internal" href="#modules-that-use-embedding-model">Modules that use Embedding model</a></li>
-<li><a class="reference internal" href="#supporting-embedding-models">Supporting Embedding models</a></li>
-<li><a class="reference internal" href="#add-your-embedding-models">Add your embedding models</a></li>
+<li><a class="reference internal" href="#configure-the-model-name-in-the-yaml-file">Configure the model name in the YAML file</a></li>
+<li><a class="reference internal" href="#supporting-embedding-models-legacy">Supporting Embedding models (Legacy)</a></li>
+<li><a class="reference internal" href="#add-your-embedding-models-legacy">Add your embedding models (Legacy)</a></li>
 </ul>
 </li>
 <li><a class="reference internal" href="#use-vllm">Use vllm</a></li>
